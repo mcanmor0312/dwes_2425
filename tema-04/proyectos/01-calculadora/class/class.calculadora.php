@@ -17,6 +17,44 @@ class Class_calculadora{
         $this->operacion = $operacion;
         $this->resultado = $resultado;
     }
+
+    //Métodos getter y setter para valor1
+    public function getValor1() {
+        return $this->valor1;
+    }
+    
+    public function setValor1($valor) {
+        $this->valor1 = $valor;
+    }
+
+    //Métodos getter y setter para valor2
+    public function getValor2() {
+        return $this->valor2;
+    }
+    
+    public function setValor2($valor) {
+        $this->valor2 = $valor;
+    }
+
+    //Métodos getter y setter para operacion
+    public function getOperacion() {
+        return $this->operacion;
+    }
+    
+    public function setOperacion($operacion) {
+        $this->operacion = $operacion;
+    }
+
+    //Métodos getter y setter para resultado
+    public function getResultado() {
+        return $this->resultado;
+    }
+    
+    public function setResultado($resultado) {
+        $this->resultado = $resultado;
+    }
+
+    //Métodos de operaciones matemáticas
     public function sumar() {
         $this->resultado = $this->valor1 + $this->valor2;
         $this->operacion="suma";
@@ -42,6 +80,5 @@ class Class_calculadora{
         $this->operacion="potencia";
         return $this->resultado;
     }
-
 }
-
+?>
